@@ -1,2 +1,2 @@
 # Projeto_Estacionamento-carros
- Web site para estacionamento de carrros desenvolvido com HTML, CSS e JAVASCRIPT puro.
+ Projeto Website para estacionamento de carros em desenvolvimento, Front-end construido com HTML, CSS e JAVASCRIPT puro. O Back-end será desenvolvido com Django.
