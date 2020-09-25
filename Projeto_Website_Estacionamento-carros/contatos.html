@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Estacionamento 24 horas - Contato</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estacionamento 24 horas - Sobre a empresa"> <!-- Descrição do site ou empresa -->
+    <meta name="keywords" content="Estacionamento 24 horas, carros, motos, fácil acesso, sobre, empresa"> <!-- Palavras chaves para encontrar sua página web -->
+    <meta name="author" content="Samio Santos"> <!-- Nome da sua empresa ou autor do site -->
+    <meta name="robots" content="index, follow"> <!-- controla o comportamento de rastreamento e indexação dos mecanismos de pesquisa. -->
+
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/contatos.css">
+
+    <link href="fontawesome-free-5.13.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome-free-5.13.0-web/css/brands.css" rel="stylesheet">
+    <link href="fontawesome-free-5.13.0-web/css/solid.css" rel="stylesheet">
+    
+    <script src="./scripts/scripts.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+        <img id="logo" src="./imagens/parkin.png" alt="Logo estacionamento">
+        
+        <nav>
+            <ul>
+                <li onmouseover="mudaFoto('imagens/casa.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="./index.html"><i class="fas fa-home tm-nav-fa-icon"></i>Home</a></li>
+                <li onmouseover="mudaFoto('imagens/service.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="./serviços.html"><i class="fab fa-whmcs"></i>Serviços</a></li>
+                <li onmouseover="mudaFoto('imagens/equipe.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="./sobre.html"><i class="fas fa-users tm-nav-fa-icon"></i>Sobre</a></li>
+                <li onmouseover="mudaFoto('imagens/dinheiro.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="./planos.html"><i class="fas fa-hand-holding-usd"></i>Planos</a></li>
+                <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="./contatos.html"><i class="fas fa-comments tm-nav-fa-icon"></i>Contatos</a></li>
+            </ul>
+        </nav>
+
+        <p><span>Estacionamento 24 horas</span><br>Slogan da empresa aqui</p>
+        <img id="parking" src="./imagens/contato.png" alt="Placa de estacionamento">
+    </header>
+    <main>
+        <h1>Entre em contato conosco:</h1>
+        <section class="contato">
+            <h2>Preencha o formulário:</h2>
+            <form action="/contato/" method="POST">
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="nome" id="email" placeholder="Digite seu e-mail" required><br>
+
+                <label for="tel">Telefone:</label><br>
+                <input type="tel" name="nome" id="tel" placeholder="Digite seu número" required><br>
+                
+                <label for="msg">Mensagem:</label><br>
+                <textarea name="msg" id="msg" placeholder="Mensagem" required></textarea><br>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+        
+        <section id="container">
+            <h2>Conteudo</h2>
+            <article class="flex-container">
+                <div>
+                    <p>
+                        Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galé do tipo e embaralhou para fazer um livro de amostra de tipos.
+                    </p>
+                </div>
+                
+                <div id="mapa">
+                    <iframe id="endereco" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.2211864007454!2d-46.86520218501957!3d-23.703794084612262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfad00192955cf%3A0xa784a4a0389f2834!2sR.%20Montevid%C3%A9u%2C%20161%20-%20Parque%20Paraiso%2C%20Itapecerica%20da%20Serra%20-%20SP%2C%2006852-470!5e0!3m2!1spt-BR!2sbr!4v1599688943252!5m2!1spt-BR!2sbr" width="340" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                
+            </article>
+        </section>
+           
+    </main>
+
+    <footer>
+        <section id="copyright">
+            <h1>Direitos</h1>
+            <p>Copyright &copy; - Todos os direitos reservados | Desenvolvidos por Samio Santos</p>
+        </section>
+    </footer>
+</body>
+</html>
