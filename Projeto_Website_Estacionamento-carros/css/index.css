@@ -47,7 +47,7 @@ section img {
         border: 2px solid whitesmoke;
         border-radius: 10px;
         margin: 10px;
-        flex: 1 1 40%; /* define se os cards ficam na mesma linha */
+        flex: 1 1 30%; /* define se os cards ficam na mesma linha */
         text-align: center;
     }
 
