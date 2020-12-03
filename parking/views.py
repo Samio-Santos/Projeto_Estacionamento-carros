@@ -10,3 +10,15 @@ def index(request):
 
 def serviços(request):
     return render(request, 'parking/serviços.html')
+
+
+def sobre(request):
+    return render(request, 'parking/sobre.html')
+
+
+def planos(request):
+    return render(request, 'parking/planos.html')
+
+
+def contatos(request):
+    return render(request, 'parking/contatos.html')
