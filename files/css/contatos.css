@@ -44,6 +44,11 @@ form textarea {
     resize: vertical;
 }
 
+form input:valid,
+form textarea:valid {
+  border: 2px solid #a1e9c5;
+}
+
 form button {
     width: 30%;
     background-color:#79bd9a;
