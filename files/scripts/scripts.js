@@ -1,5 +1,5 @@
 function mudaFoto(foto) {
-    var icon = document.getElementById("parking").src = foto;
+    var icon = document.getElementById("parking") = foto;
 }
 
 
