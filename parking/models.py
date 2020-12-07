@@ -7,6 +7,8 @@ class Formulario(models.Model):
     email = models.EmailField(max_length=40, blank=False, null=False)
     telefone = models.CharField(max_length=30, blank=False, null=False)
     mensagem = models.TextField()
+    respondido = models.BooleanField(default=False, blank=True, null=True)
+
 
     def __str__(self):
         return self.nome
