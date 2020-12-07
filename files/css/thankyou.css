@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: sans-serif;
+}
+
+
+.contato {
+    width: 95%;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato div {
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid rgb(8, 148, 8);
+}
+
+
+.contato div h1 {
+    font-family: sans-serif;
+    padding: 1rem;
+    color: green;
+}
+
+.contato div p {
+    font-size: 18px;
+    color: green;
+}
+
+@media (min-width: 900px) {
+
+    .contato {
+        width: 90%;
+
+    }
+   
+}

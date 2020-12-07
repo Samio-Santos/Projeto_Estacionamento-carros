@@ -49,17 +49,19 @@ form textarea:valid {
   border: 2px solid #a1e9c5;
 }
 
-form button {
-    width: 30%;
+button {
+    width: 20%;
     background-color:#79bd9a;
     color: white;
     border: none;
     margin: .6rem;
     padding: .8rem;
     transition: 1s;
+    outline: none;
+    cursor: pointer;
 }
 
-form button:hover {
+button:hover {
     background-color: rgb(21, 104, 21);
 }
 

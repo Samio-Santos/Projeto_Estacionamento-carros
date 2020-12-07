@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from .form import Formularioform
 
 
 # Create your views here.
@@ -20,5 +21,21 @@ def planos(request):
     return render(request, 'parking/planos.html')
 
 
+def form_contato(request):
+    form = Formularioform(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return redirect('parking_confirm')
+    
+
 def contatos(request):
-    return render(request, 'parking/contatos.html')
+    data = {}
+    form = Formularioform(request.POST or None)
+    data['form'] = form
+
+    return render(request, 'parking/contatos.html', data)
+
+
+def obrigado(request):
+    return render(request, 'parking/thankyou.html')
