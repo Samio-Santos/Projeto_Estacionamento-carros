@@ -46,11 +46,10 @@
         src="{% static 'imagens/parkin.png' %}"
         alt="Logo estacionamento"
       />
-
       <nav>
         <ul>
           <li
-            onmouseover="mudaFoto('imagens/casa.png')"
+            onmouseover="mudaFoto({'imagens/casa.png'})"
             onmouseout="mudaFoto('imagens/parking1.png')"
           >
             <a href="{% url 'parking_index' %}"
