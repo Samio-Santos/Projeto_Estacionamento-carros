@@ -24,9 +24,14 @@ def planos(request):
 def form_contato(request):
     form = Formularioform(request.POST or None)
 
-    if form.is_valid():
+    if not form.is_valid():
         form.save()
         return redirect('parking_confirm')
+    
+    else:
+        form = Formularioform(request.POST)
+        return render(request, 'parking/contatos.html', {'form': form})
+
     
 
 def contatos(request):
